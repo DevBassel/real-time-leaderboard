@@ -22,17 +22,17 @@
   - [x] register
   - [x] JWT Authorization
 
-- [] Score Submission
+- [ ] Score Submission
 
-  - [] user submit score
+  - [ ] user submit score
 
-- [] Leaderboard Updates
+- [ ] Leaderboard Updates
 
-  - [] Display a global leaderboard showing the top users across all games.
+  - [ ] Display a global leaderboard showing the top users across all games.
 
-- [] User Rankings
+- [ ] User Rankings
 
-  - [] show users rankings
+  - [ ] show users rankings
 
-- [] Top Players Report
-  - [] Generate reports on the top players
+- [ ] Top Players Report
+  - [ ] Generate reports on the top players
