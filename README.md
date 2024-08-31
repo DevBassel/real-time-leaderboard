@@ -51,3 +51,46 @@
     "statusCode": 400
   }
   ```
+
+## How To Install
+
+```bash
+> npm i -g pnpm
+> pnpm install
+```
+
+## Run App (in dev env)
+
+```bash
+> pnpm start:dev
+```
+
+## Run App (in dev production)
+
+```bash
+> pnpm build
+> pnpm start:prod
+```
+
+# Env file
+
+```js
+// APP
+PORT: number;
+JWT_KEY: string;
+NODE_ENV: 'test' | 'dev' | 'prod';
+HOST: string;
+REDIS_URL: string;
+// DB
+DB_NAME: string;
+DB_HOST: string;
+DB_PORT: number;
+DB_USERNAME: string;
+DB_PASSWORD: string;
+```
+
+#
+
+#### With thanks and appreciation to [roadmap.sh](https://roadmap.sh/)
+
+## [Project Page](https://roadmap.sh/projects/realtime-leaderboard-system)
