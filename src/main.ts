@@ -7,6 +7,8 @@ import {
   ValidationPipe,
 } from '@nestjs/common';
 import { existsSync, mkdirSync } from 'fs';
+import { SocketIoAdapter } from './socket/socket.adapter';
+import { JwtService } from '@nestjs/jwt';
 
 async function bootstrap() {
   // set logs dir
@@ -25,6 +27,9 @@ async function bootstrap() {
   app.enableCors();
 
   app.useGlobalInterceptors(new ClassSerializerInterceptor(app.get(Reflector)));
+
+  const adapter = new SocketIoAdapter(app, app.get(JwtService));
+  app.useWebSocketAdapter(adapter);
 
   await app.listen(process.env.PORT || 3000);
 }

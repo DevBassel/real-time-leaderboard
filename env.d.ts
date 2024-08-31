@@ -8,6 +8,7 @@ declare global {
       JWT_KEY: string;
       NODE_ENV: 'test' | 'dev' | 'prod';
       HOST: string;
+      REDIS_URL: string;
       // DB
       DB_NAME: string;
       DB_HOST: string;

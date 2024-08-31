@@ -10,7 +10,8 @@
 - TypeSript
 - Nestjs
 - Postgresql
-- Redis ( **caching** )
+- Web socket (socket.io)
+- Redis
 
 #
 
@@ -22,17 +23,31 @@
   - [x] register
   - [x] JWT Authorization
 
-- [ ] Score Submission
+- [x] Leader board
 
-  - [ ] user submit score
+  - [x] user submit score
+  - [x] update user score
+  - [x] get game leaderbord
+  - [x] Display a global leaderboard showing the top users across all games.
 
-- [ ] Leaderboard Updates
+- [x] User Rankings
 
-  - [ ] Display a global leaderboard showing the top users across all games.
+  - [x] ranks **CRUD**
 
-- [ ] User Rankings
+- [x] Top Players Report
 
-  - [ ] show users rankings
+  - [x] Generate reports on the top 10 players
 
-- [ ] Top Players Report
-  - [ ] Generate reports on the top players
+- [x] Handel web socket errors
+  - [x] on listen event (**error**)
+  ```json
+  // error
+  {
+    "message": [
+      "gameId must be a UUID",
+      "score must be a number conforming to the specified constraints"
+    ],
+    "error": "Bad Request",
+    "statusCode": 400
+  }
+  ```
